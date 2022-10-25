@@ -3,19 +3,19 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/views/home', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(__dirname + '/views/home.html')});
 
 
-app.get('/views/about', (req, res) =>  {
+app.get('/about', (req, res) =>  {
     res.sendFile(__dirname + '/views/about.html')} );
     
 
 
-app.get('/views/works', (req, res) => {
+app.get('/works', (req, res) => {
     res.sendFile(__dirname + '/views/works.html')});
 
-app.get('/views/photo-gallery', (req, res) => {
+app.get('/photo-gallery', (req, res) => {
     res.sendFile(__dirname + '/views/photo-gallery.html')});
 
 app.listen(3001, () => {
